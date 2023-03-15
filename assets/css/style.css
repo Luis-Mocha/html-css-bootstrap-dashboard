@@ -125,9 +125,3 @@ main {
     background-color: rgb(27,114,232);
     height: 100px;
 }
-
-/* @media screen and (min-width:992px) {
-    #contenitore-card {
-        height: calc(100vh);
-    }
-} */
