@@ -116,7 +116,18 @@ header .fa-bell {
 
 /* -- MAIN -- */    
 main {
-    background-color: aquamarine;
+    background-color: rgb(248,249,250);
     width: calc(100% - 80px);
     overflow: auto;
 }
+
+#main-topper {
+    background-color: rgb(27,114,232);
+    height: 100px;
+}
+
+/* @media screen and (min-width:992px) {
+    #contenitore-card {
+        height: calc(100vh);
+    }
+} */
