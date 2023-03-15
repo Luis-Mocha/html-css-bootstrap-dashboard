@@ -1,4 +1,21 @@
-/* HEADER */
+/* RESET */
+body {
+    overflow: hidden;
+}
+li {
+    list-style-type: none;
+    padding: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* -- HEADER --*/
 header {
     background-color: rgb(248,249,250);
 }
@@ -47,7 +64,7 @@ header .fa-bell {
     color: orange;
 }
 
-/* Media Query Header */
+/* Header Media Query */
 @media screen and (min-width:1400px) {
     .logo-bootstrap {
         height: 60px;
@@ -60,3 +77,46 @@ header .fa-bell {
     }
 }
 
+/* -- MAIN CONTAINER-- */
+#main-container { 
+    height: calc(100vh - 76px);
+    overflow: auto;
+}
+@media screen and (min-width:768px) {
+    #main-container { 
+        height: calc(100vh - 90px);
+    }
+}
+@media screen and (min-width:1400px) {
+    #main-container { 
+        height: calc(100vh - 104px);
+    }
+}
+
+
+/* -- SIDENAV -- */
+#sidebar {
+    /* width: 250px; */
+    width: 80px;
+    background-color: rgb(5,30,52);
+    background-image: url(../img/sidebar-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#sidebar a:hover {
+    background-color: rgba(106, 99, 99, 0.608);
+    transition: 0.8s;
+}
+@media screen and (min-width:992px) {
+    #sidebar {
+        width: 250px;
+    }
+}
+
+
+/* -- MAIN -- */    
+main {
+    background-color: aquamarine;
+    width: calc(100% - 80px);
+    overflow: auto;
+}
