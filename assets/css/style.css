@@ -127,9 +127,6 @@ main {
 }
 
 /* sezione classi */
-.width-60 {
-    width: 60%;
-}
 .fa-code {
     background-color: rgb(242,101,81);
     border-radius: 50%;
@@ -143,6 +140,7 @@ main {
 
 #class-section button {
     color: rgb(108,117,125);
+    background-color: white;
     padding: 2px 8px;
     font-size: 20px;
     border-radius: 10%;
@@ -151,10 +149,18 @@ main {
 #class-section th {
     text-align: start;
 }
-/*
-tr {
-    font-weight: 600;
-} */
+
+.table-width-column {
+    width: 50%;
+}
+/* media query affinchè i bottoni della colonna azioni non vadano l'uno sotto l'altro */
+@media screen and (min-width: 992px) and (max-width: 1283px){
+    .table-width-column {
+        width: initial;
+    }
+}
+
+
 /* sezione grafico */
 #graphic-section a {
     color: rgb(27,118,253);
