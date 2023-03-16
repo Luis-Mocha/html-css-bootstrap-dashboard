@@ -1,7 +1,12 @@
 /* RESET */
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
+    background-color: rgb(10,34,56);
 }
+
+body::-webkit-scrollbar {
+    width: 0px;
+  }
 li {
     list-style-type: none;
     padding: 0;
@@ -66,20 +71,19 @@ header .fa-bell {
 
 /* -- MAIN CONTAINER-- */
 #main-container { 
-    height: calc(100vh - 70px);
+    height: calc(100vh - 76px);
     overflow: auto;
 }
-/* @media screen and (min-width:768px) {
+@media screen and (min-width:768px) {
     #main-container { 
-        height: calc(100vh - 90px);
+        height: calc(100vh - 72px);
     }
 }
-@media screen and (min-width:1400px) {
+@media screen and (min-width:1199px) {
     #main-container { 
-        height: calc(100vh - 104px);
+        height: calc(100vh - 74px);
     }
-} */
-
+}
 
 /* -- SIDENAV -- */
 #sidebar {
@@ -99,7 +103,6 @@ header .fa-bell {
     }
 }
 
-
 /* -- MAIN -- */    
 main {
     background-color: rgb(248,249,250);
@@ -107,9 +110,23 @@ main {
     overflow: auto;
 }
 
+/* main topper */
 #main-topper {
     background-color: rgb(27,114,232);
-    height: 100px;
+}
+
+.tag-badge {
+    background-color: rgb(22,91,186);
+    font-size: 16px;
+}
+
+.plus-button {
+    border: 1px solid white;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 600;
+    padding: 2px 12px 6px;
+    cursor: pointer;
 }
 
 /* sezione classi */
@@ -127,9 +144,16 @@ main {
 #class-section button {
     color: rgb(108,117,125);
     background-color: white;
-    padding: 2px 8px;
-    font-size: 20px;
+    padding: 1px 2px;
+    font-size: 12px;
     border-radius: 10%;
+}
+@media screen and (min-width:430px) {
+    #class-section button {
+        font-size: 20px;
+        padding: 2px 8px; 
+    }
+    
 }
 
 #class-section th {

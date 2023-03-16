@@ -98,8 +98,37 @@
             <!-- MAIN -->
             <main>
                 <!-- topper -->
-                <div id="main-topper">
-
+                <div id="main-topper" class="pe-5 py-1 text-light fw-semibold d-md-flex justify-content-between">
+                    <!-- nuovo studente + -->
+                    <div id="new-student" class="d-flex align-items-center p-3 order-3">
+                        <span>Nuovo Studente</span>
+                        <div class="plus-button rounded ms-3">
+                            +
+                        </div>
+                    </div>
+                    <!-- Boolean + badge -->
+                    <div id="title-app" class="p-3">
+                        <h1 class="d-inline-block">
+                            Boolean
+                        </h1>
+                        <span class="badge rounded-pill tag-badge">Piano Blaze</span>
+                        <div id="app-list">
+                            <span class="badge rounded-pill tag-badge">3 App</span>
+                            <span>
+                                <i class="fa-solid fa-angles-right mx-2"></i>
+                            </span>
+                            <span class="badge rounded-pill tag-badge d-lg-none" role="button">+</span>
+                            <span class="badge rounded-pill tag-badge d-none d-lg-inline-block">Boolean mobile app</span>
+                            <span class="badge rounded-pill tag-badge d-none d-lg-inline-block">Boolean web app</span>
+                            <span class="badge rounded-pill tag-badge d-none d-lg-inline-block mt-2">Boolean blog app</span>
+                        </div>
+                    </div>
+                    <!-- studenti online -->
+                    <div id="online-students" class="p-3">
+                        <span>Studenti online negli ultimi 30 minuti</span>
+                        <h2>125</h2>
+                    </div>
+                    
                 </div>
                 <!-- sezione card -->
                 <div id="contenitore-cards" class="row g-0">
@@ -388,7 +417,6 @@
                             </div>
                         </div>
                     </div>
-            
                 </div>
             </main>
         </div>
