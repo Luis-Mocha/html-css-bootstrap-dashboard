@@ -125,3 +125,38 @@ main {
     background-color: rgb(27,114,232);
     height: 100px;
 }
+
+/* sezione classi */
+.width-60 {
+    width: 60%;
+}
+.fa-code {
+    background-color: rgb(242,101,81);
+    border-radius: 50%;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+    height: 35px;
+    width: 35px;
+}
+
+#class-section button {
+    color: rgb(108,117,125);
+    padding: 2px 8px;
+    font-size: 20px;
+    border-radius: 10%;
+}
+
+#class-section th {
+    text-align: start;
+}
+/*
+tr {
+    font-weight: 600;
+} */
+/* sezione grafico */
+#graphic-section a {
+    color: rgb(27,118,253);
+    text-decoration: underline;
+}
