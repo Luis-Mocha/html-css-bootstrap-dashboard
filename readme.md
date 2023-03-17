@@ -11,4 +11,4 @@ Utilizzo i *breakpoints* di Bootstrap per definire tre layout prinicipali:
 - "Tablet"
 - "Desktop"
 
-Tramite l'uso di **Media Queries** aggiungo ulteriori modifiche, basate sulle dimensioni dello schermo, per modifiche estetiche ed evitare rotture del layout.
+Tramite l'uso di **Media Queries** aggiungo ulteriori modifiche, basate sulle dimensioni dello schermo, per variazioni estetiche ed evitare rotture del layout.
