@@ -5,6 +5,7 @@ Utilizzo **Bootstrap 5** per ricreare il layout responsive di una dashboard, ovv
 [Documentazione Ufficiale Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 ---
+
 Utilizzo i *breakpoints* di Bootstrap per definire tre layout prinicipali: 
 - "Mobile"
 - "Tablet"
