@@ -184,6 +184,11 @@ main {
 #offcanvas-new-student {
     width: 100%;
 }
+@media screen and (max-width: 479px){
+    .form-cols-100 {
+        width: 100%;
+    }
+}
 @media screen and (min-width: 576px){
     #offcanvas-new-student {
         width: 50%;
