@@ -184,14 +184,14 @@ main {
 #offcanvas-new-student {
     width: 100%;
 }
-@media screen and (max-width: 479px){
+@media screen and (max-width: 576px){
     .form-cols-100 {
         width: 100%;
     }
 }
 @media screen and (min-width: 576px){
     #offcanvas-new-student {
-        width: 50%;
+        width: 60%;
     }
 }
 @media screen and (min-width: 768px){
