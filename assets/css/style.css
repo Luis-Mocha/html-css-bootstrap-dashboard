@@ -153,7 +153,6 @@ main {
         font-size: 20px;
         padding: 2px 8px; 
     }
-    
 }
 
 #class-section th {
@@ -169,15 +168,29 @@ main {
         width: initial;
     }
 }
-@media screen and  (max-width: 479px){
+@media screen and (max-width: 479px){
     .table-width-column {
         width: initial;
     }
 }
 
-
 /* sezione grafico */
 #graphic-section a {
     color: rgb(27,118,253);
     text-decoration: underline;
+}
+
+/* -- OFFCANVAS NEW STUDENT -- */
+#offcanvas-new-student {
+    width: 100%;
+}
+@media screen and (min-width: 576px){
+    #offcanvas-new-student {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 768px){
+    #offcanvas-new-student {
+        width: 40%;
+    }
 }

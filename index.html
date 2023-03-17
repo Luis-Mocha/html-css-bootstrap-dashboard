@@ -102,7 +102,7 @@
                     <!-- nuovo studente + -->
                     <div id="new-student" class="d-flex align-items-center p-3 order-3">
                         <span>Nuovo Studente</span>
-                        <div class="plus-button rounded ms-3">
+                        <div class="plus-button rounded ms-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-new-student" aria-controls="offcanvas-new-student">
                             +
                         </div>
                     </div>
@@ -130,7 +130,7 @@
                     </div>
                     
                 </div>
-                <!-- sezione card -->
+                <!-- sezione cards -->
                 <div id="contenitore-cards" class="row g-0">
                     <!-- prima colonna desktop -->
                     <div class="first-column-lg col-lg-8 px-3">
@@ -416,6 +416,107 @@
                                 <a href="#" class="card-link">Visualizza report approfondito</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- OFFCANVAS NEW STUDENT -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-new-student" aria-labelledby="offcanvas-new-student-label">
+                    <div class="offcanvas-header">
+                        <h4 class="offcanvas-title" id="offcanvas-new-student-label">Inserisci un nuovo studente</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <!-- offcanvas body -->
+                    <div class="offcanvas-body">
+                        <form action="">
+                            <div class="row g-3">
+                                <!-- prima riga -->
+                                <div class="col-6">
+                                    <label for="form-name" class="form-label fw-semibold">Nome</label>
+                                    <input type="text" class="form-control" id="form-name" required>
+                                </div>
+                                <div class="col-6">
+                                    <label for="form-surname" class="form-label fw-semibold">Cognome</label>
+                                    <input type="text" class="form-control" id="form-surname" required>
+                                </div>
+                                <!-- seconda riga -->
+                                <div class="col-6">
+                                    <label for="form-email" class="form-label fw-semibold">Email</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="form-email">@</span>
+                                        <input type="email" class="form-control" placeholder="" aria-label="" aria-describedby="form-email" required>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label for="form-password" class="form-label fw-semibold">Password</label>
+                                    <input type="password" class="form-control" id="form-password" required>
+                                </div>
+                                <!-- terza riga -->
+                                <div class="col-6">
+                                    <label for="form-email2" class="form-label fw-semibold">Indirizzo Email</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="form-email2">@</span>
+                                        <input type="email" class="form-control" placeholder="" aria-label="" aria-describedby="form-email2" required>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label for="form-password2" class="form-label fw-semibold">Password</label>
+                                    <input type="password" class="form-control" id="form-password2" required>
+                                </div>
+                                <!-- quarta riga -->
+                                <div class="col-12">
+                                    <label for="form-indirizzo" class="form-label fw-semibold">Indirizzo</label>
+                                    <input type="text" class="form-control" id="form-indirizzo" required>
+                                </div>
+                                <!-- quinta riga -->
+                                <div class="col-6">
+                                    <label for="form-città" class="form-label fw-semibold">Città</label>
+                                    <input type="text" class="form-control" id="form-città" required>
+                                </div>
+                                <div class="col-3">
+                                    <label for="form-stato" class="form-label fw-semibold">Stato</label>
+                                    <select id="form-stato" class="form-select" aria-label="Default select example" placeholder="" required>
+                                        <option selected>Scegli...</option>
+                                        <option value="1">Italia</option>
+                                        <option value="2">Inghilterra</option>
+                                        <option value="3">Spagna</option>
+                                    </select>
+                                    <!-- 
+                                    <input list="states" id="form-stato"  class="form-control" placeholder="Scegli...">
+                                    <datalist id="states" >
+                                        <option value="Italia">
+                                        <option value="Inghilterra">
+                                        <option value="Spagna">
+                                        <option value="Paesi Bassi">
+                                        <option value="Germmania">
+                                    </datalist>
+                                    -->
+                                </div>
+                                <div class="col-3">
+                                    <label for="form-cap" class="form-label fw-semibold text-uppercase">cap</label>
+                                    <input type="number" class="form-control" id="form-cap" required>
+                                </div>
+                                <!-- sesta riga -->
+                                <div class="col-12">
+                                    <label for="form-file" class="form-label fw-semibold">Foto</label>
+                                    <input type="file" id="form-file" class="form-control">
+                                </div>
+                                <!-- checkbox -->
+                                <div>
+                                    <input type="checkbox" name="checkbox" id="form-checkbox" required>
+                                    <label for="form-checkbox" class="form-label fw-semibold">Seleziona per proseguire</label>
+                                </div>
+                                <!-- buttons -->
+                                <div>
+                                    <button type="button" class="btn btn-primary me-2">Salva</button>
+                                    <button type="button" class="btn btn-warning">Svuota</button>
+                                </div>
+                                <div class="text-center">
+                                    <input type="submit" value="Invia" class="btn btn-success">
+                                </div>
+                                
+                            </div>
+                            
+                        </form>
                     </div>
                 </div>
             </main>
